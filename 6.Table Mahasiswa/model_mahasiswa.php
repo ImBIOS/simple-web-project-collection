@@ -17,3 +17,7 @@
   $hasil = mysqli_fetch_all($result, MYSQLI_ASSOC);
   return $hasil;
 }
+
+echo "<pre>";
+print_r(getTableMahasiswa());
+echo "</pre>";
