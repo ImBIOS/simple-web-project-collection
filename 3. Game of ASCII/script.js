@@ -15,4 +15,4 @@ window.addEventListener('keydown', (event) => {
         <small>event.code</small>
     </div>
     `
-})
+}) 
