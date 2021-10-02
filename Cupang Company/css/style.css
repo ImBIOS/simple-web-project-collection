@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* ===== MEDSOS ===== */
+.medsos{
+    padding: 15px 0;
+    background-color: #ff69ff;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.fa-facebook:hover {
+    color: #6990df;
+}
+
+.fa-twitter:hover{
+    color: rgb(55, 125, 255);
+}
+
+.fa-youtube:hover{
+    color: red;
+}
+
+/* .medsos a:hover{
+    color: yellow;
+} */
+
+.medsos ul li{
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    /* border: 1px solid; */
+}
+/* ===== MEDSOS ===== */
+
+
+/* ===== HEADER ===== */
+header h1{
+    /* border: 1px solid; */
+    float: left;
+    padding: 15px 0px;
+    color: #ff69ff;
+}
+
+header ul{
+    /* border: 1px solid; */
+    float: right;
+}
+
+header ul li{
+    display: inline-block;
+}
+
+header ul li a{
+    padding: 25px 20px;
+    display: inline-block;
+}
+
+header ul li a:hover{
+    background-color: #ff69ff;
+    color: #fff;
+}
+.active{
+    background-color: #ff69ff;
+    color: #fff;
+}
+/* ===== HEADER ===== */
+
+
+/* ===== BANNER ===== */
+.banner{
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.banner:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}  
+
+.banner h2{
+    color: white;
+    border: 3px solid white;
+    padding: 20px 25px;
+    z-index: 1;
+}
+
+.container:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* ===== BANNER ===== */
