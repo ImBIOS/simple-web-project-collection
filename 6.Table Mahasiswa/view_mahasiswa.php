@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="id">
+    
+    
+    //View adalah bagian MVC yang mengurusi design tampilan. Mayoritas isi view berupa kode
+    //HTML, CSS dan JavaScript (jika dibutuhkan). Namun kadang juga terdapat sedikit kode PHP
+    //yang berisi data hasil pemrosesan dari bagian lain.
 
 <head>
     <meta charset="UTF-8">
