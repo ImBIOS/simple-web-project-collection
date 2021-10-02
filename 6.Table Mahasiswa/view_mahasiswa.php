@@ -61,6 +61,7 @@
                 <th>IPK</th>
             </tr>
             <?php
+            //kode dibawah ini merupakan looping, untuk mengambil data yang akan dimasukkan kedalam isiTabelMahasiswa
 foreach ($isiTabelMahasiswa as $data ) {
  // konversi date MySQL (yyyy-mm-dd) menjadi dd-mm-yyyy
  $tanggal_php = strtotime($data["tanggal_lahir"]);
