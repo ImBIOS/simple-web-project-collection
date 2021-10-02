@@ -1,0 +1,80 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+        crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <link rel="stylesheet" href="style.css" />
+      <title>Todo List</title>
+    </head>
+
+    <body>
+      <div class="container">
+        <header class="text-center text-light my-4">
+          <h1 class="mb-4">Todo List</h1>
+          <form class="search" name="form1" autocomplete="off">
+            <input
+              class="form-control m-auto"
+              type="text"
+              name="search"
+              placeholder="Search todo..."
+            />
+          </form>
+        </header>
+
+        <ul class="list-group todos mx-auto text-light">
+          <li
+            class="
+              list-group-item
+              d-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            <span>Read A Book</span>
+            <i class="far fa-trash-alt delete"></i>
+          </li>
+          <li
+            class="
+              list-group-item
+              d-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            <span>Take Online Class</span>
+            <i class="far fa-trash-alt delete"></i>
+          </li>
+          <li
+            class="
+              list-group-item
+              d-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            <span>Listen To Music</span>
+            <i class="far fa-trash-alt delete"></i>
+          </li>
+        </ul>
+
+        <form class="add text-center my-4" name="addfrm" autocomplete="off">
+          <label class="text-light">Add new todo</label>
+          <input class="form-control m-auto" type="text" name="add" />
+        </form>
+      </div>
+
+      <script src="script.js"></script>
+    </body>
+  </html>
+</html>
