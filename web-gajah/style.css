@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* ===== Medsos ===== */
+.medsos{
+    padding: 10px 0;
+    background-color: #0e4c6f;
+}
+.medsos a{
+    color: white;
+    text-decoration: none;
+}
+.medsos a:hover{
+    color: #2399dd;
+}
+.medsos ul li{
+    display: inline-block;
+    padding-right: 10px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    /* border: 1px solid; */
+}
+/* ===== Medsos ===== */
+
+/* ===== Header ==== */
+/* header{
+        border: 1px solid;
+    } */
+
+header h1{
+    float: left;
+    padding: 15px 0;
+    color: #0e4c6f;
+    /* border: 1px solid; */
+}
+header h1 a{
+    text-decoration: none;
+    color: #0e4c6f;
+    /* border: 1px solid; */
+}
+header ul{
+    float: right;
+    /* border: 1px solid; */
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    padding:25px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+header ul li a:hover{
+    background-color: #0e4c6f;
+    color: white;
+    text-decoration: none;
+    padding: 25px 20px;
+}
+.active{
+    background-color: #0e4c6f;
+    color: white;
+    text-decoration: none;
+}
+
+.banner{
+    background-image: url('https://images.unsplash.com/photo-1518250365984-b2d738e10af0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
+    /* background-size: cover; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+}
+.banner:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(56, 119, 146, 0.5);
+}
+
+.banner h2{
+    color: white;
+    border: 3px solid white;
+    padding: 20px 25px;
+    z-index: 1;
+}
+
+.container:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* ===== Header ==== */
+
+/* ==== About ==== */
+section{
+    padding: 30px;
+    padding-right: 10px;
+}
+
+section h3 {
+    text-align: center;
+    padding: 20px 0;
+    color: #0e4c6f;
+    margin-bottom: 25px;
+    /* border: 1px solid; */
+}
+
+.about p{
+    color: #666;
+    word-spacing: 2px;
+    text-align: justify;
+    line-height: 30px;
+}
+/* ==== About ==== */
+
+.about, .service{
+    padding-bottom: 100px;
+}
+
+/* ==== Service ==== */
+.service{
+    background: linear-gradient(
+    90deg,#F6F8FD 29px,transparent 1%) center,linear-gradient(#F6F8FD 29px,transparent 1%) center,#bfc5d3;
+    background-size: 30px 30px;
+}
+
+.box{
+    /* border: 1px solid; */
+    color: #0e4c6f;
+}
+
+.box .col-4{
+    width: 25%;
+    padding: 20px;
+    float: left;
+    text-align: center;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+}
+
+.icon{
+    border: 1px solid;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.box .col-4 h4{
+    margin: 20px 0;
+}
+/* ==== Service ==== */
+
+/* ==== Footer ==== */
+footer{
+    padding: 30px 0;
+    background-color: #0e4c6f;
+    color: white;
+    text-align: center;
+}
+/* ==== Footer ==== */
+
+/* ==== About Header ==== */
+.aboutheader{
+    background-color: #0e4c6f;
+}
+
+.aboutheader p{
+    color: white;
+}
+/* ==== About Header ==== */
+
+/* ==== About Header ==== */
+.bannerabout{
+    background-image: url('https://images.unsplash.com/photo-1518250365984-b2d738e10af0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
+    size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+}
+.bannerabout:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(56, 119, 146, 0.5);
+}
+/* ==== End About Header ==== */
+
+/* ==== Map ==== */
+.map{
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ==== End Map ==== */
