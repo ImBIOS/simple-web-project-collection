@@ -1,0 +1,17 @@
+.nasgor p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: #2F281E;
+}
+
+.navbar-nav .nav-link {
+    color: #2F281E;
+}
+
+
+@media only screen and (max-width: 769px) { 
+    .btn-primary, .btn-secondary {
+        margin-top: 10px;
+        margin-left: 0 !important;
+    }
+}
