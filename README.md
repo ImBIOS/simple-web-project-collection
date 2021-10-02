@@ -11,3 +11,4 @@
 - [Project 8: Auto Typist Effect](8.%20Auto%20Typist%20Effect)
 - [Project 9: Ripple Buttons](9.%20Ripple%20Buttons)
 - [Project 10: Glow Board](10.%20Glow%20Board)
+- [Project 13: Side Drawer](13.%20Side%20drawer)
