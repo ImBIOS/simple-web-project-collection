@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=
+        Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0
+        ,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>login</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            font-family: 'Nunito Sans', sans-serif;
+
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .tag-p {
+            margin-top: -9px;
+            color: rgb(147, 136, 136);
+        }
+
+        .btn-primary {
+            width: 100%;
+            background-color: tomato;
+            border-color: tomato;
+        }
+
+        @media(max-width: 932px) {
+            .display-none {
+                display: none !important
+            }
+        }
+
+        .akun a {
+            text-decoration: none;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="row m-0 h-100">
+
+        <div class="col p-0 d-flex justify-content-center align-items-center display-none ">
+            <img src="img/login.svg.svg" class="w-75 h-75">
+
+        </div>
+
+
+        <div class="col p-0 d-flex justify-content-center align-items-center  ">
+            <form class="w-75">
+
+                <h2 class="form-label">Sign in</h2>
+                <p class="tag-p">Find your best meal.</p>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Email/Username">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Your password">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+                <p class="text-center mt-3 akun">don't have account yet? <a href="regist.html">Sign Up</a> </p>
+            </form>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+
+    <script src=" js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</body>
+
+</html>
