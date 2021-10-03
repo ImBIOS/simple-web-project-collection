@@ -25,3 +25,9 @@ body
 		0%{transform:translateX(-100px);}
 		100%{transform:translateX(1366px);}
 	}
+#street
+	{
+		position:relative;
+		top:600px;
+		border-bottom:5px groove green;
+	}
