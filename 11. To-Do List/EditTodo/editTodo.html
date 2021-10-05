@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="editTodo.css">
+
+  <title>Edit To Do</title>
+</head>
+<body>
+  <div class="center">
+    <h2>Edit TODO</h1>
+    <button aria-label="Close" id="close-button">&#10006;</button> 
+    <div>
+      <label for="name">Name</label><br>
+      <input type="text" name="name" id="name">
+    </div>
+    <div>
+      <label for="desc">Description</label>
+      <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+      <label for="due-date">Due Date</label><br>
+      <input type="date" id="due-date">
+    </div>
+    <div>
+      <label for="attachment">Attachment</label><br>
+      <input type="file" name="attachment" id="attachment">
+    </div>
+    <button id="save-button">Save</button>
+  </div>
+</body>
+</html>
