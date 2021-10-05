@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* ===== MEDSOS ===== */
+.medsos{
+    padding: 15px 0;
+    background-color: #0E4C6F;
+}
+
+.atas{
+    padding: 50px 0px;
+    background-color: #0E4C6F;
+}
+
+.atas ul li{
+    display: inline-block;
+    color: #fff;
+    margin-right: 100px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.medsos a:hover{
+    color: yellow;
+}
+
+.medsos ul li{
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    /* border: 1px solid; */
+}
+/* ===== MEDSOS ===== */
+
+
+/* ===== HEADER ===== */
+header h1{
+    /* border: 1px solid; */
+    float: left;
+    padding: 15px 0px;
+    color: #0E4C6F;
+}
+
+header ul{
+    /* border: 1px solid; */
+    float: right;
+}
+
+header ul li{
+    display: inline-block;
+}
+
+header ul li a{
+    padding: 25px 20px;
+    display: inline-block;
+}
+
+header ul li a:hover{
+    background-color: #0E4C6F;
+    color: #fff;
+}
+.active{
+    background-color: #0E4C6F;
+    color: #fff;
+}
+/* ===== HEADER ===== */
+
+
+/* ===== BANNER ===== */
+.banner{
+    height: 80vh;
+    background-image: url('../img/buku.jpg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+.banner:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgb(56, 119, 146, 0.6);
+}  
+
+.bannerabout{
+    height: 80vh;
+    background-image: url('../img/buku.jpg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 140px;
+    margin-right: 140px;
+}  
+.bannerabout:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}  
+
+.banner h2{
+    color: white;
+    border: 3px solid white;
+    padding: 20px 25px;
+    z-index: 1;
+}
+
+.container:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* ===== BANNER ===== */
+
+.peta{
+    padding-bottom: 100px;
+    padding-top: 0;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,#F6F8FD 29px,transparent 1%) center,linear-gradient(#F6F8FD 29px,transparent 1%) center,#bfc5d3;
+    background-size: 30px 30px;
+}
