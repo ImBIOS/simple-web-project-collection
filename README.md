@@ -1,5 +1,8 @@
 # Simple Web Project Collection
 
+# TODO/Need Help!
+- Tidy up the repo
+
 # Table of Contents
 - [Project 1: Progressive Steps](1.%20Steps_Progressive)
 - [Project 2: Feedback System](2.%20Feedback%20System)
