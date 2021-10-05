@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./LoginPage.css">
+
+  <title>Login Page</title>
+</head>
+
+<body>
+    <table class="center">
+      <tbody>
+        <tr> 
+          <td class="signInBox">
+            <div>
+              <h4>TODO LIST APP</h4>
+              <p>LOGIN</p>
+            </div>
+            <form>
+              <label for="email">Email</label><br>
+              <input type="email" id="email" placeholder="example@email.com">
+              <i class="fas fa-envelope"></i>
+              <label for="password">Password</label><br>
+              <input type="password" id="password" placeholder="password">
+              <i class="fas fa-lock" onclick="show()"></i>
+            </form>
+            <a id="forgot" href="#">Forgot password?</a>
+            <form>
+              <button id="signInButton">Sign In</button>
+            </form>
+            <p id="signUpOption">Don't have account? <a href="#">Sign Up here</a></p>
+          </td>
+          <td class="imgBox">
+            <img src="../img/road-image.jpg"  id="roadImg" alt="roadImg">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+
+<script src="./LogInPage.js"></script>
+
+</html>

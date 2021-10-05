@@ -26,11 +26,13 @@ body {
   font-size: 18px;
 }
 
-.center div, input, textarea {
+.center div,
+input,
+textarea {
   margin-top: 10px;
 }
 
-#name{
+#name {
   border-width: 0.1px;
   border-radius: 4px;
   height: 20px;
@@ -50,7 +52,7 @@ body {
 }
 
 #due-date {
-  border-radius: 4px;
+  border-radius: 5px;
   border-width: 0.1px;
 }
 
