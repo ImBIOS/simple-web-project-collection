@@ -1,0 +1,77 @@
+body {
+  background-color: brown;
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  padding: 0 25px;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 425px;
+  border-radius: 10px;
+  background: white;
+  box-sizing: border-box;
+}
+
+#close-button {
+  position: absolute;
+  margin: -45px 0 0 425px;
+  border-width: 0;
+  background: none;
+  font-size: 18px;
+}
+
+.center div, input, textarea {
+  margin-top: 10px;
+}
+
+#name{
+  border-width: 0.1px;
+  border-radius: 4px;
+  height: 20px;
+  width: 95%;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+#desc {
+  overflow: auto;
+  height: 50px;
+  width: 95%;
+  border-width: 0.1px;
+  border-radius: 4px;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+#due-date {
+  border-radius: 4px;
+  border-width: 0.1px;
+}
+
+#save-button {
+  margin-top: 35px;
+  font-size: 16px;
+  color: white;
+  background-color: grey;
+  border-width: 0.1px;
+  border-radius: 5px;
+  height: 25px;
+  width: 75px;
+}
+
+/* mobile setup */
+@media screen and (max-width: 550px) {
+  .center {
+    max-width: 400px;
+  }
+
+  #close-button {
+    margin: -47px 0 0 325px;
+  }
+}
