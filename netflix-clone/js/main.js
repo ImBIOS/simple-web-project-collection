@@ -16,4 +16,14 @@ for (var i = 0; i < coll.length; i++) {
       content.style.maxHeight = content.scrollHeight + "px";
     }
   });
+
 }
+
+$(document).ready(function(){
+  var typed = new Typed(".typing", {
+    strings: ["Enter your Email"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+  });
+});

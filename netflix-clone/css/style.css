@@ -60,6 +60,10 @@ a {
     font-weight: 500;
     font-size: 1rem;
 }
+.signin-btn:hover{
+    background-color: #b50009;
+    font-size: 1.1rem;
+}
 
 .main {
     margin-top: 200px;
@@ -85,30 +89,40 @@ a {
 
 input[type="email"] {
     height: 50px;
-    width: 35%;
+    width: 40%;
     padding: 7px;
     margin-bottom: 50px;
+    border: none;
+    border-radius: 20px;
 }
 
 .btn {
     
-    padding-bottom: 23px;
-    padding-top: 10px;
-    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 15px;
     background-color: #e50914;
     color: #fff;
     border: 0;
     min-width: 18%;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.3rem;
+    border-radius: 20px;
+}
+
+.btn:hover{
+    background-color: #b50009;
+    font-size: 1.4rem;
 }
 
 ::placeholder {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .email-form {
     margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
 }
 
 /* about */
@@ -200,6 +214,7 @@ i {
     cursor: pointer;
     padding: 18px;
     border: none;
+    border-radius: 10px;
     text-align: left;
     outline: none;
     font-size: 25px;
@@ -209,12 +224,13 @@ i {
 .content {
     padding: 0 ;
     border-top: 2px black solid;
+    border-radius: 10px;
     overflow: hidden;
     max-width: 50%;
     margin: auto;
     margin-bottom: 10px;
     text-align: left;
-    font-size: 30px;
+    font-size: 24px;
     max-height:0;
     background-color: #312e2e;
     transition: max-height 0.2s ease-out;
@@ -249,6 +265,9 @@ footer p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     line-height: 3;
+}
+.li_a:hover{
+    color: #ffffff;
 }
 
 /* media queries */
