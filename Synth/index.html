@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>synth</title>
+  </head>
+
+  <style>
+    #pad {
+      position: absolute;
+
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      background: black;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #label {
+      font: 40px Arial;
+      color: white;
+      user-select: none;
+    }
+  </style>
+
+  <body>
+    <div id="pad">
+      <div id="label">CLICK / DRAG</div>
+    </div>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.9/Tone.js"></script>
+
+  <script>
+    const synth = new Tone.Synth().toDestination();
+    var pad = document.getElementById('pad');
+    var label = document.getElementById('label');
+    var dragging = false;
+
+    function getBackgroundColor(x){
+      if (dragging) {
+        let fraction = x/window.innerWidth;
+        // Create a "Hue/Saturation/Lightness" (hsl) color for the background
+        // On left side of screen, hue=0 (red)
+        // On right side of screen, hue=360 (also red)
+        return "hsl("+(fraction*360)+", 100%, 50%)";
+      }
+      else return "#222";
+    }
+
+    function getLabelColor(x){
+      if (dragging) {
+        let fraction = x/window.innerWidth;
+        // Create a "Hue/Saturation/Lightness" (hsl) color for the label
+        // This one is the opposite of the background; the hue is offset by +180
+        return "hsl("+(fraction*360+180)+", 100%, 50%)";
+      }
+      else return "white";
+    }
+
+    function down(event) {
+      dragging = true;
+      var x = event.pageX;
+      synth.triggerAttack(x);
+      label.innerHTML = Math.round(x) + 'Hz';
+      label.style.color = getLabelColor(x);
+      pad.style.background = getBackgroundColor(x);
+    }
+    function up(event) {
+      dragging = false;
+      synth.triggerRelease();
+      label.innerHTML = 'CLICK / DRAG';
+      label.style.color = getLabelColor();
+      pad.style.background = getBackgroundColor();
+    }
+    function move(event) {
+      if (dragging) {
+        var x = event.pageX;
+        synth.setNote(x);
+        label.innerHTML = Math.round(x) + 'Hz';
+        label.style.color = getLabelColor(x);
+        pad.style.background = getBackgroundColor(x);
+      }
+    }
+
+    pad.addEventListener('pointerdown', down);
+    pad.addEventListener('pointerup', up);
+    pad.addEventListener('pointermove', move);
+  </script>
+</html>
