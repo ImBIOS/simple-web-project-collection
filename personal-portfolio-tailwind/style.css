@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  /* background-color: var(--background-color); */
+  color: var(--text-color);
+}
+:root {
+  --background-color: rgb(21, 20, 24);
+  --text-color: #fff;
+  --button-background-color: #7208b7;
+
+  --background-color-lightmode: #e0e2db;
+  --text-color-lightmode: rgb(5, 5, 5);
+}
+body {
+  background-image: url(./images/confetti-doodles.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.nrml-text {
+  font-size: 1.2em;
+  color: var(--text-color);
+}
+.header {
+  position: sticky;
+  font-weight: bold;
+  color: var(--text-color);
+}
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #000;
+}
+button {
+  font-weight: bold;
+  background-color: var(--button-background-color);
+  color: #fff;
+}
+.menu-item {
+  opacity: 0.6;
+}
+.menu-item:hover {
+  opacity: 1;
+}
+.menu-item:active {
+  opacity: 1;
+}
+.button-menu:hover {
+  background-color: #000;
+}
+.title {
+  font-weight: bolder;
+  color: white;
+  font-size: 1.5em;
+}
+.name {
+  font-size: x-large;
+}
+.name-label {
+  font-size: 1.7em;
+  font-weight: bolder;
+}
+
+.intro-me {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+.contact-form {
+  border: 0.1px solid var(--text-color);
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  p,
+  h1 {
+    text-align: left;
+  }
+  .hero-part-img,
+  .about-part-img {
+    display: none;
+  }
+  .menu-item,
+  .button-menu {
+    display: none;
+  }
+}
+
+.lightmode {
+  background-image: url(./images/confetti-doodles-light.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
