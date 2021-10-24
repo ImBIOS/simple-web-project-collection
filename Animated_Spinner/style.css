@@ -1,0 +1,49 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  .main{
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgrey;
+  }
+  .para{
+    padding: 5px;
+  }
+  .spinner{
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 10px solid white;
+    animation: spin 0.5s ease infinite;
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  @keyframes spin{
+   0%{
+       border-top-color: red;
+       transform: rotate(0deg);
+   }
+    25%{
+       border-top-color: yellow;
+       transform: rotate(90deg);
+   }
+    50%{
+       border-top-color: blue;
+       transform: rotate(180deg);
+   }
+   75%{
+       border-top-color: green;
+       transform: rotate(270deg); 
+   }
+    100%{
+       border-top-color: red;
+       transform: rotate(360deg);
+   }
+  }
