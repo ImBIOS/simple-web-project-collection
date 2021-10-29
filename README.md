@@ -62,12 +62,8 @@ git push origin branch_name
 - [Project 9: Ripple Buttons](9.%20Ripple%20Buttons)
 - [Project 10: Glow Board](10.%20Glow%20Board)
 - [Project 13: Side Drawer](13.%20Side%20drawer)  
-  
-  <br>
 - [Project 14: SimonGame](https://github.com/ImBIOS/simple-web-project-collection/tree/main/14.SimonGame)
-  
 - [Project 15: Simple-html-boilerplate](https://github.com/ImBIOS/simple-web-project-collection/tree/main/15.%20Simple-html-boilerplate)
-  
 - [Project 16: Magic square calculator](https://github.com/ImBIOS/simple-web-project-collection/tree/main/16.%20Magic%20square%20calculator)
 - [Project 17: Datepicker](https://github.com/ImBIOS/simple-web-project-collection/tree/main/17.Datepicker)
 - [Project 18: Animate(Panda) CSS code](https://github.com/ImBIOS/simple-web-project-collection/tree/main/Animate(Panda)%20CSS%20code)
@@ -98,13 +94,6 @@ git push origin branch_name
 - [Project 43: Synth](https://github.com/pratyaksh1610/simple-web-project-collection/tree/main/43.Synth)
 - [Project 44: weather app](https://github.com/pratyaksh1610/simple-web-project-collection/tree/main/44.weather%20app)
 - [Project 45: Website Construction](https://github.com/pratyaksh1610/simple-web-project-collection/tree/main/45.Website%20Construction)
-  
-  
-  
-  
-  
-  
-
 
  ## 😄 Shoutout to all the contributors ❤️
 
