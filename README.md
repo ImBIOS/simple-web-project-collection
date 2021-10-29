@@ -12,7 +12,7 @@
 🎯 Do not forget to ⭐the repository.
 
 
-## 🏷️ Getting Started
+## 🏷️ To get started
 
 * First, fork the repository.
 * Clone the forked repository to your local machine.
