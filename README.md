@@ -18,7 +18,7 @@
 * Clone the forked repository to your local machine.
 
 ```markdown
-git clone https://github.com/your-username/hacktoberfest.git
+git clone https://github.com/your-username/simple-web-project-collection.git
 ```
 
 * Add upstream URL 
