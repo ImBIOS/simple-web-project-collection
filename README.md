@@ -40,7 +40,6 @@ git push origin branch_name
 
 * Create a new pull request from your forked repository (Click the `New Pull Request` button located at the top of your repo)
 * Wait for your PR review and approval from the maintainers.
-  
   <br>
 
 #   <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> Table of Contents
@@ -55,3 +54,10 @@ git push origin branch_name
 - [Project 9: Ripple Buttons](9.%20Ripple%20Buttons)
 - [Project 10: Glow Board](10.%20Glow%20Board)
 - [Project 13: Side Drawer](13.%20Side%20drawer)
+
+
+ ## 😄 Shoutout to all the contributors ❤️
+
+<a href="https://github.com/ImBIOS/simple-web-project-collection/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ImBIOS/simple-web-project-collection" />
+</a>
