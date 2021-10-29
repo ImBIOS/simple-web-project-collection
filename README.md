@@ -61,3 +61,7 @@ git push origin branch_name
 <a href="https://github.com/ImBIOS/simple-web-project-collection/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ImBIOS/simple-web-project-collection" />
 </a>
+<br>
+<br>
+
+<p align="center">Made with ❤️ by a contributor </p>
