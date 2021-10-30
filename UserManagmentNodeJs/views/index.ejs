@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Node Js CRUD</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/all.css">
+
+</head>
+
+<body>
+    <table id="main" border="0" cellspacing="0">
+        <tr>
+            <td id="header">
+                <h1>Keep Records</h1>
+
+                <div id="search-bar">
+                    <label>Search : work as a read</label>
+                    <input name='name' type="text" id="search" autocomplete="off">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td id="table-form">
+                <form id="addForm" action="/" method="POST">
+                    Name : <input type="text" name="sname" id="sname"> Age : <input type="number" name="sage" id="sage"> City : <input type="text" name="scity" id="scity">
+                    <input onclick="Save();" type="submit" id="save-button" value="save">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td id="table-data">
+                <table width="100%" cellpadding="10px">
+                    <tr>
+                        <th width="40px">Id</th>
+                        <th>Name</th>
+                        <th width="50px">Age</th>
+                        <th width="150px">City</th>
+                        <th width="60px">Update</th>
+                        <th width="70px">Delete</th>
+                    </tr>
+                    <tbody id="load-table">
+
+                        <% for (var i = 0; i < data.length; i++) {%>
+
+                            <tr>
+                                <td class="center">
+                                    <%=[i + 1]%>
+                                </td>
+                                <td>
+                                    <%=data[i].Name%>
+                                </td>
+                                <td contenteditable="true">
+                                    <%=data[i].Age%>
+                                </td>
+                                <td>
+                                    <%=data[i].City%>
+                                </td>
+
+                                <td class="center">
+                                    <form type="hidden" action="/edit/<%=data[i]._id%>" method="GET">
+                                        <input onclick="appearDiv() " type='submit' class="edit-btn " data-eid=" " name='submit' value="Edit " />
+                                    </form>
+                                    <!-- <a href="/edit/<%=data[i]._id%>" class="edit-btn " id='edit'>Edit</a> -->
+                                    <!-- <input onclick=" return appearDiv() " type='submit' class="edit-btn " data-eid=" " name='submit' value="Update " /> -->
+                                    <!-- <button onclick="appearDiv(); getCovidata(); " id='edit' type='submit' class="edit-btn " data-eid="<%=data[i]._id%>" name='submit' value="Update ">Update</button> -->
+                                </td>
+                                <td class="center ">
+                                    <form action="/delete/<%=data[i]._id %>" method="DELETE">
+                                        <input onclick="getAlert();" type='submit' class="delete-btn" data-eid="" name='submit' value="Delete" />
+                                    </form>
+                                </td>
+                            </tr>
+                            <%}%>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div id="app" class="container">
+        <ul class="page">
+            <li class="page__btn"><i class="fas fa-chevron-left"></i></li>
+            <% for (var p = 0; p < howmany-1; p++) {%>
+
+
+                <li onclick="Active();" class="page__numbers">
+                    <a href="?page=<%=[p+1]%>">
+                        <%=[p + 1]%>
+                    </a>
+                </li>
+                <%}%>
+                    <!-- <li onclick="Active();" id="click" class="page__numbers  "><a href="?page=2">2</a></li>
+            <li onclick="Active();" class="page__numbers"><a href="?page=3">3</a></li>
+            <li onclick="Active();" class="page__numbers">4</li>
+            <li onclick="Active();" class="page__numbers">5</li>
+            <li onclick="Active();" class="page__numbers">6</li>-->
+                    <li onclick="Active();" class="page__dots">...</li>
+
+                    <li onclick="Active();" class="page__numbers">
+                        <a href="?page=<%=[p+1]%>">
+                            <%=[p = howmany]%>
+                        </a>
+                    </li>
+                    <li class="page__btn secbt"><i class="fas fa-chevron-right"></i></li>
+        </ul>
+    </div>
+
+
+    <div id="error-message" class="messages"></div>
+    <div id="success-message" class="messages"> Message save sucess fully</div>
+
+
+    <script type="text/javascript">
+        const Save = function() {
+            document.getElementById("success-message").style.display = "block";
+        }
+
+        // Alert before deleteing data
+        const getAlert = function() {
+                alert('Are you sure you want to proceed?');
+            }
+            // document.getElementById("first").value = "hello owrld";
+
+        const Active = function() {
+            const start = document.getElementById('click');
+            start.className += "active"
+        }
+    </script>
+</body>
+
+</html>

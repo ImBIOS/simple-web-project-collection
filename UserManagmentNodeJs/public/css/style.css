@@ -1,0 +1,364 @@
+body {
+    font-family: arial;
+    background: #b2bec3;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+.center {
+    text-align: center;
+}
+
+#main {
+    width: 800px;
+    margin: 0 auto;
+    background: white;
+    font-size: 19px;
+}
+
+#header {
+    background: #5D3F6A;
+    color: #fff;
+}
+
+h1 {
+    float: left;
+    margin: 15px;
+}
+
+#search-bar {
+    padding: 10px 20px 0;
+    float: right;
+}
+
+#search-bar label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}
+
+#search-bar input {
+    width: 250px;
+    height: 25px;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    border: 1px solid #000;
+}
+
+#search-bar input:focus {
+    outline: 0;
+}
+
+#table-form {
+    background: #FFB3A7;
+    padding: 20px 10px;
+}
+
+#table-form input[type="text"],
+#sage {
+    height: 25px;
+    font-size: 18px;
+    padding: 3px 10px;
+    margin-right: 17px;
+    border-radius: 4px;
+    border: 1px solid #5D3F6A;
+    outline: 0;
+}
+
+#sage {
+    width: 40px;
+    padding: 3px 0 3px 10px;
+}
+
+#scity {
+    width: 120px;
+}
+
+#save-button,
+#edit-submit {
+    background: #2c3e50;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    padding: 8px 30px;
+    margin-left: 7px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#save-button {
+    padding: 8px 20px;
+    background: #068de8e1;
+}
+
+#save-button:hover {
+    background: #2c3e50;
+}
+
+#save-button:focus,
+#edit-submit:focus {
+    outline: 0;
+}
+
+#table-data {
+    padding: 15px;
+    height: auto;
+    vertical-align: top;
+}
+
+#table-data th {
+    background: #C93756;
+    color: #fff;
+}
+
+#table-data tr:nth-child(odd) {
+    background: #ecf0f1;
+}
+
+#table-data h2 {
+    text-align: center;
+}
+
+#success-message,
+#error-message {
+    background: #DEF1D8;
+    color: green;
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    display: none;
+    position: fixed;
+    right: 75px;
+    top: 15px;
+    z-index: 20;
+}
+
+#error-message {
+    background: #EFDCDD;
+    color: red;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: 0;
+    padding: 4px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background: #27ae60;
+    color: white;
+    border: 0;
+    padding: 4px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#modal {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+}
+
+#modal-form {
+    background: #fff;
+    width: 30%;
+    position: relative;
+    top: 20%;
+    left: calc(50% - 15%);
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#modal-form h2 {
+    margin: 0 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+#modal-form input[type="text"],
+#modal-form input[type="number"] {
+    width: 90%;
+    height: 25px;
+    font-size: 18px;
+    padding: 3px 10px;
+    margin-right: 17px;
+    border-radius: 4px;
+    border: 1px solid #5D3F6A;
+    outline: 0;
+}
+
+#close-btn {
+    /* background: red; */
+    color: white;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.far {
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+/* paginatin part */
+
+:root {
+    --primary: #23adad;
+    --greyLight: #23adade1;
+    --greyLight-2: #cbe0dd;
+    --greyDark: #2d4848;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    overflow-y: scroll;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.6px;
+    line-height: 1.4;
+    --webkit-user-select: none;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.container {
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #b2bec3;
+    color: var(--greyDark);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.items-list {
+    max-width: 90vw;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 3rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.item {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--greyDark);
+    cursor: pointer;
+}
+
+.item span {
+    background: #ffffff;
+    box-shadow: 0 0.8rem 2rem rgba(90, 97, 129, 0.05);
+    border-radius: 0.6rem;
+    padding: 2rem;
+    font-size: 3rem;
+    transition: all 0.3s ease;
+}
+
+.item:hover span {
+    transform: scale(1.2);
+    color: var(--primary);
+}
+
+.item p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: var(--greyLight);
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    margin: 3rem;
+    border-radius: 0.6rem;
+    background: #ffffff;
+    box-shadow: 0 0.8rem 2rem rgba(90, 97, 129, 0.05);
+}
+
+.page__numbers,
+.page__btn,
+.page__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.8rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.page__dots {
+    width: 2.6rem;
+    height: 2.6rem;
+    color: var(--greyLight);
+    cursor: initial;
+    margin-left: 0.8rem;
+}
+
+.page__numbers>a {
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    color: white;
+    padding-top: 0.5rem;
+}
+
+.page__numbers>a:hover {
+    color: var(--primary);
+}
+
+.active {
+    color: #ffffff;
+    background: var(--primary);
+    font-weight: 600;
+    border: 1px solid var(--primary);
+}
+
+.page__btn {
+    color: var(--greyLight);
+    pointer-events: none;
+    padding-right: 3.7rem;
+}
+
+.page__btn.active {
+    color: var(--greyDark);
+    pointer-events: initial;
+}
+
+.page__btn.active:hover {
+    color: var(--primary);
+}
+
+.secbt {
+    padding-left: 1.7rem;
+}
