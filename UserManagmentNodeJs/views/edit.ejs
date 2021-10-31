@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Node Js CRUD</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/all.css">
+
+</head>
+
+<body>
+
+    <!-- Popup Modal Box for Update the Records -->
+    <div id="modal">
+        <div id="modal-form">
+            <h2>Edit Form</h2>
+            <form action="/update/<%=datas._id%>" method="POST" id="edit-form">
+                <table cellpadding="10px" width="100%">
+                    <form action="/update/" method="POST">
+
+                        <tr>
+
+                            <td width="90px">First Name</td>
+                            <td><input type="text" name="sname" id="edit-name" value="<%=datas.Name%>">
+                                <input type="text" name="sid" id="edit-id" hidden="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Age</td>
+                            <td><input type="number" name="sage" id="edit-age" value="<%=datas.Age%>"></td>
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td><input type="text" name="scity" id="edit-city" value="<%=datas.City%>"></td>
+                        </tr>
+
+                        <tr>
+
+                            <td></td>
+                            <td>
+                                <input type="submit" id="edit-submit" value="Update">
+                    </form>
+
+                    </td>
+                    </tr>
+                </table>
+            </form>
+            <div id="close-btn" onclick="hideDiv();"><i class="far fa-times-circle"></i></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // show the update div
+        const appearDiv = function() {
+            document.getElementById('modal').style.display = "block";
+            // const check = this.data(eid);
+            // alert('check');
+
+
+        }
+
+        appearDiv();
+
+        // // Hide the update div
+        // const hideDiv = function() {
+        //     document.getElementById('modal').style.display = "none";
+        // }
+
+        // Alert before deleteing data
+        const getAlert = function() {
+            alert('Are you sure you want to proceed?');
+        }
+
+        const getCovidata = (indexnum) => {
+
+
+            fetch('http://localhost:8000/update').then((apidata) => {
+                console.log(apidata);
+                return apidata.json();
+            }).then((realdata) => {
+                console.log(realdata._id);
+
+                // const showData = realdata.Global;
+
+
+            }).catch((error) => {
+                console.log(`You have error on ${error}`);
+            });
+        }
+
+        getCovidata();
+    </script>
+</body>
+
+</html>
