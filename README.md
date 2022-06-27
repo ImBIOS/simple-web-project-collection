@@ -50,7 +50,7 @@ git push origin branch_name
   </p>
   
   
-#   <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> Table of Contents
+#   <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width=29> Table of Contents
 - [Project 1: Progressive Steps](1.%20Steps_Progressive)
 - [Project 2: Feedback System](2.%20Feedback%20System)
 - [Project 3: Game of ASCII](3.%20Game%20of%20ASCII)
