@@ -103,4 +103,4 @@ git push origin branch_name
 <br>
 <br>
 
-<p align="center">Made with ❤️ by a contributor </p>
+<p align="center">Made with ❤️ by all contributors </p>
