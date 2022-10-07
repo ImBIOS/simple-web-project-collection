@@ -1,2 +1,2 @@
 # Add 'hacktoberfest-accepted' to any changes within this repo
-hacktoberfest-accepted: *
+hacktoberfest-accepted: */**/*
